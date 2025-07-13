@@ -55,13 +55,32 @@ body {
   background-color: var(--navy900);
   border-radius: 0.9em;
   margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.stats-container {
+  background-color: var(--navy900);
+  width: 100%;
+  height: 9.6em;
+  z-index: 2;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.card-img {
+  position: absolute;
+  top: 0;
+  left: 14em;
 }
 
 /* Profile Container */
 
 .profile-content-container {
   background-color: var(--purple600);
-  height: 8.3em;
+  height: 9.3em;
   border-radius: 0.9em;
   padding: 2em;
   display: flex;
@@ -110,4 +129,46 @@ body {
 
 .button:hover {
   color: var(--white);
+}
+
+/* Work Card */
+
+.work {
+  position: relative;
+  background-color: var(--orange300);
+}
+
+/* Play Card */
+
+.play {
+  position: relative;
+  background-color: var(--blue300);
+}
+
+/* Study */
+
+.study {
+  position: relative;
+  background-color: var(--pink400);
+}
+
+/* Exercise */
+
+.exercise {
+  position: relative;
+  background-color: var(--green400);
+}
+
+/* Social */
+
+.social {
+  position: relative;
+  background-color: var(--purple700);
+}
+
+/* Self-Card */
+
+.self-care {
+  position: relative;
+  background-color: var(--yellow300);
 }
