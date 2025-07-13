@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--navy950);
+  font-family: "Rubik", sans-serif, serif;
+}
+
 /* Colours */
 
 :root {
@@ -25,8 +30,84 @@
   --navy900: hsl(235, 46%, 20%);
   --purple500: hsl(235, 45%, 61%);
   --navy200: hsl(236, 100%, 87%);
+  --white: hsl(0, 0%, 100%);
 
   /*Card Header*/
 
   --cardHeaderFS: 18px;
+}
+
+/* Card Styling */
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 7;
+  width: 100%;
+  height: auto;
+  padding: 6em 2em;
+  justify-content: center;
+}
+
+.card {
+  height: 12.68em;
+  width: 20em;
+  background-color: var(--navy900);
+  border-radius: 0.9em;
+  margin-bottom: 1.5em;
+}
+
+/* Profile Container */
+
+.profile-content-container {
+  background-color: var(--purple600);
+  height: 8.3em;
+  border-radius: 0.9em;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  height: 4em;
+  width: 4em;
+  border: 4px solid var(--white);
+  border-radius: 50%;
+  margin-right: 1.5em;
+}
+
+.profile-text {
+  width: 100%;
+}
+
+.report-text {
+  margin-bottom: 0.5em;
+  color: var(--purple500);
+}
+
+.name-text {
+  color: var(--white);
+  font-size: 1.4em;
+  font-weight: lighter;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5em;
+  gap: 2em;
+}
+
+.button {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  color: var(--purple500);
+  padding: 0 1em;
+}
+
+.button:hover {
+  color: var(--white);
 }
