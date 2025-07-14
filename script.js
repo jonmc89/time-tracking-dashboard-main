@@ -40,7 +40,7 @@ fetch("./data.json")
     const studyHoursData = studyData.timeframes.daily.current;
     const exerciseHoursData = exerciseData.timeframes.daily.current;
     const socialHoursData = socialData.timeframes.daily.current;
-    const selfCardHoursData = selfCareData.timeframes.daily.current;
+    const selfCareHoursData = selfCareData.timeframes.daily.current;
     const workPrevHoursData = workData.timeframes.daily.previous;
     const playPrevHoursData = playData.timeframes.daily.previous;
     const prevStudyHoursData = studyData.timeframes.daily.previous;
@@ -53,7 +53,7 @@ fetch("./data.json")
     studyHours.innerHTML = studyHoursData;
     exerciseHours.innerHTML = exerciseHoursData;
     socialHours.innerHTML = socialHoursData;
-    selfCareHours.innerHTML = selfCardHoursData;
+    selfCareHours.innerHTML = selfCareHoursData;
     prevWorkHours.innerHTML = workPrevHoursData;
     prevPlayHours.innerHTML = playPrevHoursData;
     prevStudyHours.innerHTML = prevStudyHoursData;
