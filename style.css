@@ -53,7 +53,8 @@ body {
   height: 10em;
   width: 22em;
   background-color: var(--navy900);
-  border-radius: 0.9em;
+  border-top-left-radius: 0.9em;
+  border-top-right-radius: 0.9em;
   margin-bottom: 1.5em;
   display: flex;
   flex-direction: column;
